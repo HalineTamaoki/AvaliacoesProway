@@ -109,3 +109,10 @@ case
 end as faixaSalarial
 from funcionarios;
 
+#14. Listar o nome de todas as pessoas que atuam em 2 ou mais projetos
+create view view_2_projects as
+select nome, count(ep.idProjeto) as qtdeProjetos
+from funcionarios f, equipe_projeto ep
+where f.id = ep.idFuncionario
+group by f.nome
+having count(ep.idProjeto)>1

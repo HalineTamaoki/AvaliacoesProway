@@ -42,3 +42,6 @@ select * from view_vendas_cielo_or_inter;
 
 #13. Para cada pessoa, mostrar se o salário é menor que R$3.000, maior que R$3.000 ou maior que R$5.000
     select * from view_faixa_salarial;
+    
+#14. Listar o nome de todas as pessoas que atuam em 2 ou mais projetos
+	select * from view_2_projects;

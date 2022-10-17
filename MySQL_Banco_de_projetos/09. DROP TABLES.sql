@@ -37,5 +37,6 @@ drop view view_contato_empresa;
 drop view view_projeto_data;
 drop view view_faixa_salarial;
 drop view view_mesa;
+drop view view_2_projects;
 drop view view_maior_salario;
 drop view view_menor_salario;
