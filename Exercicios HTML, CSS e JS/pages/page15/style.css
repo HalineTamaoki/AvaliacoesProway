@@ -1,0 +1,35 @@
+.darkPink-color{
+    color: #89004f;
+}
+
+#acao{
+    border: 1px dashed #89004f;
+    min-height: 50vh;
+    padding: 5vh;
+}
+
+.inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 25vh;
+    color:  #89004f;
+}
+
+.page15-actions{
+    color: #fdf1f1;
+}
+
+.page15-actions:hover{
+    color: #fdf1f1;
+    background-color: #f70071;
+    cursor: pointer;
+}
+
+.error-td{
+    position: absolute;
+    background-color: #fdf1f1;
+    border: none;
+    font-size: 0.7em;
+    color: red;
+}

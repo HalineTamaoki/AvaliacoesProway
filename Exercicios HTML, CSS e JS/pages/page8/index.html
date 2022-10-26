@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../style.css">
+    <script src="script.js"></script>
+</head>
+<body class="custom-pages container-fluid">
+    <div class="mb-4">
+        <h1 class="display-6">Exercício 8</h1>
+        <p>Utilize um elemento input do tipo time para pedir o horário atual e cinco botões de
+            rádio</p>
+    </div>
+    <form class="d-flex text-start align-items-center flex-column" id="page8-form">
+        <div>
+            <div class="row page8-d-flex align-items-baseline mb-3">
+                <label class="form-label col-auto">Horário local: </label>
+                <div class="col-auto">
+                    <input type="time" required class="form-control" id="time-input">
+                </div>
+            </div>
+            <p>Selecione a cidade</p>
+            <div class="container-fluid">
+                <div class="form-check">
+                    <input type="radio" data-nome="Lisboa" value="-07:00" name="option" id="page8-option1" class="form-check-input" required>
+                    <label for="page8-option1" class="form-check-label">Lisboa</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" data-nome="Nova York" value="-02:00" name="option" id="page8-option2" class="form-check-input">
+                    <label for="page8-option2" class="form-check-label">Nova York</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" data-nome="Cidade do México" value="-01:00" name="option" id="page8-option3" class="form-check-input">
+                    <label for="page8-option3" class="form-check-label">Cidade do México</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" data-nome="Tóquio" value="+09:00" name="option" id="page8-option4" class="form-check-input">
+                    <label for="page8-option4" class="form-check-label">Tóquio</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" data-nome="Berlim" value="-08:00" name="option" id="page8-option5" class="form-check-input">
+                    <label for="page8-option5" class="form-check-label">Berlim</label>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center mt-4 mb-5">
+                <button class="btn" onclick="converterHora()">Enviar</button>
+            </div>
+        </div>
+    </form>
+    <p id="page8-result" class="hide">O horário <span id="page8-result-span"></span></p>
+</body>
+</html>

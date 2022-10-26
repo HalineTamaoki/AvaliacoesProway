@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../style.css">
+    <script src="script.js"></script>
+</head>
+<body class="custom-pages container-fluid">
+    <h1 class="display-6">Exercício 9</h1>
+    <p>Crie um formulário com um campo numérico e um botão. Nas aulas de JavaScript
+        iremos implementar essa atividade, onde a ideia é o usuário informar um número,
+        quando clicado no botão, será realizada a tabuada daquele valor.</p>
+    <form id="page9-form">
+        <div class="row d-flex justify-content-center align-items-baseline mb-4 mt-4">
+            <label class="form-label col-auto">Número: </label>
+            <div class="col-sm-2">
+                <input type="number" required class="form-control" id="page9-input">
+            </div>
+        </div>
+        <button class="btn mb-5" onclick="fazerTabuada()">Enviar</button>
+    </form>
+    <div class="hide" id="page-9-result">
+        <b>Tabuada do <span id="page9-result-span"></span></b>
+        <div class="d-flex justify-content-center mt-3">
+            <table class="w-auto">
+                <thead>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>7</th>
+                    <th>8</th>
+                    <th>9</th>
+                    <th>10</th>
+                </thead>
+                <tbody id="page-9-tbody">        
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

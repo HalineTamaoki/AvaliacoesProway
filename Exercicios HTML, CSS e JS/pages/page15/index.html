@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body class="custom-pages container-fluid" >
+    <h1 class="display-6 mb-lg-5">Exercício 15</h1>
+
+    <div id="login" class="pages">
+        <form class="text-start d-flex flex-column align-items-center" id="page15-form">
+            <div>
+                <div class="row align-items-baseline mb-2">
+                    <label for="page15-email" class="form-label col-sm-3">Email: </label>
+                    <div class="col-sm-8">
+                        <input type="email" required id="page15-email" class="form-control">
+                    </div>
+                </div>
+                <div class="row align-items-baseline mb-2">
+                    <label for="page15-password" class="form-label col-sm-3">Senha: </label>
+                    <div class="col-sm-8">
+                        <input type="password" required id="page15-password" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <button class="btn mt-3 mb-1" id="s1-btn-login" onclick="autentificar()">Login</button>
+        </form>
+        <p class="fs-6 hide darkPink-color" id="s1-invalid-user">Usuário inválido. Mais <span id="invalid-user-tentativas"></span> tentativas restantes</p>
+        <p class="fs-6 hide darkPink-color" id="s1-aguarde">Aguarde <span id="s1-aguarde-span"></span> segundos para tentar novamente</p>
+    </div>
+
+    <div id="page2" class="hide pages">
+        <h2 class="fs-4 fw-bold mb-4">Escolha sua ação</h2>
+        <button class="btn w-75 mb-1" onclick="goToPage(3)">Gerenciar Marcas</button>
+        <button class="btn w-75 mb-1" onclick="goToPage(4)">Gerenciar Produtos</button>
+        <button class="btn w-75 mb-5" onclick="goToPage(1)">Finalizar</button>
+        <p class="fs-6 darkPink-color"></p>
+    </div>
+
+    <div id="page3" class="pages hide">
+        <div class="container-fluid">
+            <h2 class="fs-4 fw-bold py-4 text-decoration-underline">Gerenciar marcas</h2>
+            <section id="acao">
+                <div id="page3-btn-principais">
+                    <div class="d-flex justify-content-start">
+                        <button class="btn w-auto" onclick="toogleMarcaCadastro()">Cadastrar Nova Marca</button>
+                        <button class="btn w-auto mx-2" onclick="goToPage(2)">Voltar para o início</button>
+                        <button class="btn w-auto" onclick="goToPage(1)">Finalizar</button>
+                    </div>
+                </div>
+                <div class="hide" id="page3-screen-cadastrar">
+                    <div class="d-flex justify-content-start">
+                        <button class="btn w-auto" onclick="toogleMarcaCadastro()">Voltar para Marcas</button>
+                    </div>
+                    <h3 class="mt-5 fs-5 fw-bold mb-4 text-start">Cadastrar marca</h3>
+                    <form class="form-cadastro">
+                        <div class="row align-items-baseline">
+                            <label class="form-label col-sm-1" for="nome-marca">Nome:</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control nome-marca"/>
+                            </div>
+                        </div>
+                        <div class="d-flex mt-3">
+                            <button class="btn btn-cadastrar" onclick="cadastrarMarca()">Cadastrar</button>
+                        </div>
+                    </form>
+                    <p class="fs-6 darkPink-color text-start mt-2 hide cadastro-msg"></p>
+                </div>
+                <div class="d-flex justify-content-center mt-5">
+                    <table id="page3-table">
+                        <thead>
+                            <th>Nome</th>
+                            <th>Excluir</th>
+                        </thead>
+                        <tbody id="page3-tbody">
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <div id="page4" class="pages hide">
+        <div class="container-fluid">
+            <h2 class="fs-4 fw-bold py-4 text-decoration-underline">Gerenciar produtos</h2>
+            <section id="acao">
+                <div id="page4-btn-principais">
+                    <div class="d-flex justify-content-start">
+                        <button class="btn w-auto" onclick="toogleProdutoCadastro()">Cadastrar Novo Produto</button>
+                        <button class="btn w-auto mx-2" onclick="goToPage(2)">Voltar para o início</button>
+                        <button class="btn w-auto" onclick="goToPage(1)">Finalizar</button>
+                    </div>
+                </div>
+                <div class="hide" id="page4-screen-cadastrar">
+                    <div class="d-flex justify-content-start">
+                        <button class="btn w-auto" onclick="toogleProdutoCadastro()">Voltar para Produtos</button>
+                    </div>
+                    <h3 class="mt-5 fs-5 fw-bold mb-4 text-start">Cadastrar produto</h3>
+                    <form class="form-cadastro">
+                        <div class="row align-items-baseline">
+                            <label class="form-label col-sm-1" for="nome-marca">Nome:</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="nome-produto"/>
+                            </div>
+                        </div>
+                        <div class="row align-items-baseline mt-2 mb-2">
+                            <label class="form-label col-sm-1" for="nome-marca">Marca:</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control nome-marca"/>
+                            </div>
+                        </div>
+                        <div class="row align-items-baseline">
+                            <label class="form-label col-sm-1" for="nome-marca">Valor:</label>
+                            <div class="col-sm-6">
+                                <input type="number" min="0" step="0.01" class="form-control nome-marca" id="valor-produto"/>
+                            </div>
+                        </div>
+                        <div class="d-flex mt-4">
+                            <button class="btn btn-cadastrar" onclick="cadastrarProduto()">Cadastrar</button>
+                        </div>
+                    </form>
+                    <p class="fs-6 darkPink-color text-start mt-2 hide cadastro-msg"></p>
+                </div>
+                <div class="d-flex justify-content-center mt-5">
+                    <table id="page4-table">
+                        <thead>
+                            <th>Nome</th>
+                            <th>Marca</th>
+                            <th>Valor</th>
+                            <th>Excluir</th>
+                        </thead>
+                        <tbody id="page4-tbody">
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+</body>
+</html>

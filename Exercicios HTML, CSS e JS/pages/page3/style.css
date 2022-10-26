@@ -1,0 +1,28 @@
+#page3-p-result{   
+    margin-top: 30px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.page3-result-description{
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    width: 50%;
+    margin-top: 30px;
+}
+
+#page3-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.page3-result-description p{
+    font-weight: bold;
+}
+
+.page3-result-description span{
+    font-weight: normal;   
+}

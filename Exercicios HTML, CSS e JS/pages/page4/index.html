@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body class="custom-pages container-fluid">
+    <h1 class="display-6">Exercício 4</h1>
+    <p>Utilizando checkbox, crie dez itens de uma lanchonete. Haverá um elemento HTML
+        de texto como: p ou h1 onde será exibido o total dos itens selecionados</p>
+    <div class="container-fluid d-flex flex-md-column align-items-center mt-4 mb-4" onchange="count()">
+        <div class="form-check">
+            <input type="checkbox" name="itens" id="item1" class="form-check-input">
+            <label for="item1" class="form-check-label">Item 1</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" name="itens" id="item2" class="form-check-input">
+            <label for="item2" class="form-check-label">Item 2</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" name="itens" id="item3" class="form-check-input">
+            <label for="item3" class="form-check-label">Item 3</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" name="itens" id="item4" class="form-check-input">
+            <label for="item4" class="form-check-label">Item 4</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" name="itens" id="item5" class="form-check-input">
+            <label for="item5" class="form-check-label">Item 5</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" name="itens" id="item6" class="form-check-input">
+            <label for="item6" class="form-check-label">Item 6</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" name="itens" id="item7" class="form-check-input">
+            <label for="item7" class="form-check-label">Item 7</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" name="itens" id="item8" class="form-check-input">
+            <label for="item8" class="form-check-label">Item 8</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" name="itens" id="item9" class="form-check-input">
+            <label for="item9" class="form-check-label">Item 9</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" name="itens" id="item10" class="form-check-input">
+            <label for="item10" class="form-check-label">Item 10</label>
+        </div>
+    </div>
+    <p id="page4-total-p">Total de itens selecionados: <span id="page4-total-itens">0</span></p>
+</body>
+</html>
