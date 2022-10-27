@@ -26,3 +26,14 @@
         grid-template-columns: 20vh 80vh 20vh 35vh;
     }
 }
+
+@media screen and (max-width: 1250px){
+    .produto{
+        background-color: blue;
+    }
+
+    .produto-carrinho-container{
+        background-color: blue;
+        grid-template-columns: 20vh 80vh 20vh 35vh;
+    }
+}
