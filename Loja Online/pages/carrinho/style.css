@@ -1,0 +1,87 @@
+.custom-button{
+    background-color: #fdf1f1;
+    width: auto;
+    height: 6.5vh;
+    margin-right: 2vh;
+}
+.custom-button:hover{
+    background-color: #c33b80;
+}
+
+.produto-carrinho-container{
+    background-color: #fff7f7;
+    border: #f0c4c4 1px solid;
+    display: grid;
+    padding: 2vh 5vh;
+    grid-template-columns: 20vh 100vh 20vh 35vh;
+    border-radius: 8px;
+    margin-top: 3vh;
+    align-items: center;
+}
+
+.produto-carrinho-container img{
+    width: 12vh;
+    height: 12vh;
+    border-radius: 5px;
+}
+
+.produto-carrinho-remover-btn{
+    width: 21vh;
+    background-color:#fff7f7;
+    border: none;
+    text-align: center;
+    color: #c33b80;
+    font-size: 0.8em;
+}
+
+.produto-carrinho-remover-btn:hover{
+    background-color:#fff7f7;
+    color: red
+}
+.produto-carrinho-contagem div{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1vh;
+    align-items: center;
+}
+
+.produto-carrinho-contagem div button{
+    width: 5vh;
+    height: 4vh;
+    border-radius: 3px;
+}
+
+.produto-carrinho-contagem div p{
+    margin-bottom: 0;
+}
+
+.produto-carrinho-p-msg{
+    color: #c33b80;
+    font-size: 0.8em;
+    margin-top: -1vh;
+}
+
+.produto-carrinho-p-preco{
+    font-size: 1.5em;
+    text-align: end;
+    margin-right: 5vh;
+}
+
+#finalizar-container button{
+    height: 6vh;
+    border-radius: 5px;
+}
+
+#finalizar-container p{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.carrinho-vazio{
+    margin-top: 3vh;
+}
+
+.carrinho-vazio img{
+    max-width: 3vh;
+    max-height: 3vh;
+}

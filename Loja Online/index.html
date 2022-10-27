@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./pages/pagina-inicial/style.css">
+    <link rel="stylesheet" href="./pages/style-responsive.css">
+    <script src="./pages/pagina-inicial/addCarrinho.js"></script>
+    <script src="./pages/pagina-inicial/exibirPorProduto.js"></script>
+    <script src="./pages/pagina-inicial/criarProdutos.js"></script>
+</head>
+
+<body onload="exibirProdutos()">
+    <header class="d-flex justify-content-around align-items-end">
+        <a href=""><img src="./images/logo.png" alt="Logotipo com imagem de gato" id="img-logo"/></a>
+        <form class="d-flex align-items-end" id="form-pesquisa">
+            <div class="text-start">
+                <label class="form-label px-3 custom-label">Pesquisar produto</label>
+                <div class="d-flex bg-white input-container align-items-center p-1 mx-3">
+                    <input placeholder="Pesquisar por produtos" class="form-control custom-input" required>
+                    <img src="./images/pesquisar.png" alt="Imagem pesquisar" id="img-pesquisar"/>
+                </div>
+            </div>
+            <button class="btn custom-button" onclick="displayPorProduto()">Pesquisar</button>
+        </form>
+        <div class="custom-tootip">
+            <a href="/pages/carrinho/index.html"><img src="./images/carrinho.png" alt="Carrinho de compras" id="img-carrinho"/></a>            
+            <p class="custom-tootip-text">Ir para o carrinho</p>
+        </div>
+    </header>
+
+    <section class="d-flex">
+        <div class="container-fluid custom-segmento" onchange="displayPorSegmento()">
+            <h1 class="fw-bold mb-2 custom-segmento-h1">Segmento</h1>
+            <div>
+                <div class="form-check">
+                    <input type="checkbox" value="Roupas" class="form-check-input" name="input-segmento">
+                    <label class="form-check-label">Roupas</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="Brinquedos" class="form-check-input" name="input-segmento">
+                    <label class="form-check-label">Brinquedos</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="Eletrodomesticos" class="form-check-input" name="input-segmento">
+                    <label class="form-check-label">Eletrodomésticos</label>
+                </div>
+            </div>
+        </div>
+        <div class="custom-produtos-container">
+
+        </div>
+    </section>
+</body>
+</html>

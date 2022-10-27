@@ -1,0 +1,128 @@
+#img-pesquisar{
+    max-width: 4vh;
+    max-height: 4vh;
+}
+
+#img-carrinho{
+    max-width: 8vh;
+    max-height: 8vh;
+    cursor: pointer;
+}
+
+.custom-button{
+    background-color: #fdf1f1;
+    width: auto;
+    height: 6vh;
+}
+
+.custom-button:hover{
+    background-color: #c33b80;
+}
+
+.input-container{
+    border-radius: 5px;
+}
+
+.custom-input{
+    border: none;
+    width: 80vh;
+}
+
+.custom-label{
+    font-size: 0.8em;
+}
+
+.custom-tootip-text{
+    visibility: hidden;
+    width: 150px;
+    border: 1px solid black;
+    background-color: #fafafa;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    top: 13vh;
+    font-size: 0.8em;
+}
+  
+.custom-tootip:hover .custom-tootip-text {
+    visibility: visible;
+}
+
+.custom-segmento{
+    width: 18%;
+    margin-top: 2vh;
+}
+
+.custom-segmento-h1{
+    font-size: 1.1em;
+}
+
+.custom-produtos-container{
+    background-color: white;
+    width: 80%;
+    margin-left: 1vh;
+    border-radius: 5px;
+    padding: 5vh 8vh;
+    min-height: 75vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.produto{
+    width: 40vh;
+    height: 46vh;
+    border-radius: 5px;
+    background-color: #fdf1f1;
+    border: #f0c4c4 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5vh;
+    text-align: center;
+    margin: 2.5vh 1vh;
+}
+
+.produto img{
+    max-width: 20vh;
+    height: 20vh;
+    border-radius: 5px;
+    margin: 2vh 0;
+}
+
+.produto button{
+    width: 30vh;
+    height: 7vh;
+    border-radius: 5px;
+}
+
+.produto-p-esgotado{
+    color: #89004f;
+    font-size: 1.5em;
+}
+
+.produto-esgotado{
+    background-color: rgb(230, 230, 230);
+}
+
+.produto-msg{
+    margin-top: 1vh;
+    color: #c33b80;
+    font-size: 0.8em;
+}
+
+.erro-pesquisa{
+    text-align: center;
+    width: 130vh;
+}
+
+.erro-pesquisa h1{
+    font-size: 1.6em;
+}
+
+.erro-pesquisa img{
+    margin-top: 8vh;
+    max-width: 15vh;
+    max-height: 15vh;
+}
