@@ -1,4 +1,7 @@
 @media screen and (max-width: 1390px){
+    section{
+        max-width: 1390px;
+    }
     .produto{
         width: 35vh;
     }
@@ -14,7 +17,7 @@
     
     .produto{
         width: 28vh;
-        height: 43vh;
+        height: 48vh;
     }
 
     .produto button{
@@ -25,15 +28,118 @@
     .produto-carrinho-container{
         grid-template-columns: 20vh 80vh 20vh 35vh;
     }
+
+    .custom-tootip:hover .custom-tootip-text {
+        visibility: hidden;
+    }
+    
 }
 
 @media screen and (max-width: 1250px){
-    .produto{
-        background-color: blue;
+    .produto-carrinho-container{
+        grid-template-columns: 20vh 70vh 20vh 35vh;
+    }
+    .produto button{
+        font-size: 0.8em
+    }
+
+}
+
+@media screen and (max-width: 1180px){
+    .produto-carrinho-container{
+        grid-template-columns: 20vh 60vh 20vh 35vh;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .produto-carrinho-container{
+        grid-template-columns: 20vh 50vh 20vh 35vh;
+    }
+}
+
+@media screen and (max-width: 1030px){
+    section{
+        padding: 0 2vh;
     }
 
     .produto-carrinho-container{
-        background-color: blue;
-        grid-template-columns: 20vh 80vh 20vh 35vh;
+        grid-template-columns: 20vh 40vh 20vh 35vh;
+    }
+}
+
+@media screen and (max-width: 980px){
+    .custom-produtos-container{
+        grid-template-columns: auto auto;
+        width: 70%;
+    }
+    .custom-input{
+        width: 50vh;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .produto-carrinho-container{
+        grid-template-columns: 20vh 30vh 20vh 35vh;
+    }
+}
+
+@media screen and (max-width: 815px){
+    .produto-carrinho-container{
+        grid-template-columns: 20vh 20vh 20vh 35vh;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .custom-produtos-container{
+        grid-template-columns: auto;
+        width: 60%;
+    }
+    .produto-carrinho-container{
+        grid-template-columns: 20vh 20vh 20vh 35vh;
+    }
+    .produto{
+        width: 40vh;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .produto-carrinho-container{
+        grid-template-columns: 20vh 20vh 15vh 35vh;
+    }
+    .produto-carrinho-remover-btn{
+        width: 15vh;
+    }
+}
+
+@media screen and (max-width: 730px){
+    #img-logo{
+        max-width: 7vh;
+        max-height: 7vh;
+    }
+
+    #img-carrinho{
+        max-width: 5vh;
+        max-height: 5vh;
+    }
+
+    .custom-input{
+        width: 30vh;
+    }
+    .produto-carrinho-p-preco{
+        font-size: 1.3em;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .produto{
+        width: 30vh;
+    }
+    .custom-produtos-container{
+        grid-template-columns: auto;
+        width: 50%;
+    }
+    section{
+        padding: 0;
     }
 }
